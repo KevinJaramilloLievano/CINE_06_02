@@ -11,7 +11,7 @@
 
 	<div class="container centrado">
 
-		<h2 class="letraBlanca">Bienvenido a cinema CUH</h2>
+		<h2 class="letraBlanca">Bienvenido a cinema UPP</h2>
 
 		<div class="row">
 			<div class="col-lg-4">
