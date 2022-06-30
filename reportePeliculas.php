@@ -11,7 +11,7 @@
 	$resultado = $conexion->query($consulta);
 
     //Generación de reporte
-    $pdf = new FPDF('P', 'mm', array(100,150));
+    $pdf = new FPDF();
 
 
 		//Ciclo para recorrer el objeto y sus datos
@@ -33,7 +33,7 @@
 		    $pdf->SetXY(20,40);
 		    $pdf->Cell(170,20,'Nombre pelicula: ',0,1,'C');
 
-		    $rutaImagen = 'C:/xampp/htdocs/cine/temp/pelicula_'.$row['idPelicula'].'.png';
+		    $rutaImagen = 'C:/xampp/htdocs/CINE_06_02/temp/pelicula_'.$row['idPelicula'].'.png';
 		    $pdf->Image($rutaImagen,75,60,60,60);
 
 
