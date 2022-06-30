@@ -16,6 +16,13 @@
 			$consulta = "Select * from pelicula where idPelicula=".$idPelicula;
 
 			$resultado = $conexion->query($consulta);
+			$comprobacion = mysqli_num_rows($resultado);
+			
+			if ($comprobacion == 0){
+				// redirigir
+				header("Location: ./404.php");
+				exit();
+			}
 		?>
 
 		<h2 class="letraBlanca">
