@@ -20,15 +20,27 @@
 
 			$conexion = new mysqli("localhost","root","","peliculas");
 			$consulta = "Select * from pelicula where idPelicula=".$idPelicula;
-
 			//echo "<br>Query: ".$consulta;
 
 			$resultado = $conexion->query($consulta);
-			require 'phpqrcode/qrlib.php';
-			$dir = "temp/";
+			/* Comprobamos si el id existe
+				En caso de que exista se ejecutara norma;
+				De lo contrario lo redirigira a error 404 
+			*/
+			$comprobacion = mysqli_num_rows($resultado);
+			
+			if ($comprobacion == 0){
+				// redirigir
+				header("Location: ./404.php");
+				exit();
+			} else {
+				// Ejecutar
+				require 'phpqrcode/qrlib.php';
+				$dir = "temp/";
 
-			if(!file_exists($dir))
-				mkdir($dir);
+				if(!file_exists($dir))
+					mkdir($dir);
+			}
 		?>
 
 		<table class="table table-dark table-striped table-hover">
