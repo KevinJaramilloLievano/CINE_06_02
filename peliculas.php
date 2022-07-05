@@ -57,6 +57,7 @@
 		  <tbody>
 		  	<?PHP
 		  	//Ciclo para recorrer el objeto y sus datos
+			$enumeracion = 1;
 			while($row = $resultado->fetch_assoc())
 			{
 				$filename = $dir.'pelicula_'.$row['idPelicula'].'.png';
@@ -72,7 +73,9 @@
 			  	?>
 			    <tr>
 			      <th scope="row">
-			      	<?PHP echo $row['idPelicula']; ?>
+			      	<?PHP echo $enumeracion;
+					$enumeracion++;
+					?>
 			      </th>
 			      <td>
 			      	<?PHP echo $row['nombrePelicula']; ?>
