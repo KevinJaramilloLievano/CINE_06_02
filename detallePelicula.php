@@ -18,7 +18,9 @@
 			$idPelicula = $_GET['id'];
 			//echo "ID = ". $idPelicula;
 
-			$conexion = new mysqli("localhost","root","","peliculas");
+			//Obtien las variables del archivo externo
+			include('conexions.php');
+			$conexion = new mysqli($serverName,$userName,$password, $dbName);
 			$consulta = "Select * from pelicula where idPelicula=".$idPelicula;
 			//echo "<br>Query: ".$consulta;
 

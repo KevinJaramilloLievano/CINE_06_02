@@ -3,8 +3,10 @@
 	header('Content-Type: text/html; charset=UTF-8');
 	require('fpdf/fpdf.php');
 
+	//Obtien las variables del archivo externo
+	include('conexions.php');
 	//parámetros: servidor, usuario, contraseña, BD
-	$conexion = new mysqli("localhost", "root", "", "peliculas");
+	$conexion = new mysqli($serverName,$userName,$password, $dbName);
 	//Estructura para obtener todos los registros de la tabla actor
 	$consulta = "SELECT idPelicula, nombrePelicula, nacionalidad, estatus FROM pelicula WHERE estatus=1";
 	//Variable que guarda el resultado del query

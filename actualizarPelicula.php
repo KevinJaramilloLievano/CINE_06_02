@@ -10,7 +10,10 @@
 	$sinopsis = $_POST['sinopsis'];
 
 	//Servidor, usuario, contraseña, BD
-	$conexion = new mysqli("localhost","root","", "peliculas");
+	
+	//Obtien las variables del archivo externo
+	include('conexions.php');
+	$conexion = new mysqli($serverName,$userName,$password, $dbName);
 	$consulta = "UPDATE pelicula SET 
 				 nombrePelicula = '$nombreP',
 				 fecha = '$fecha',

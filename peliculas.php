@@ -27,9 +27,11 @@
 		</h2>
 		
 		<?PHP 
+			//Obtien las variables del archivo externo
+			include('conexions.php');
 			//variable que conecta con mysql
 			//parámetros: servidor, usuario, contraseña, BD
-			$conexion = new mysqli("localhost", "root", "", "peliculas");
+			$conexion = new mysqli($serverName,$userName,$password,$dbName);	
 			//Estructura para obtener todos los registros de la tabla actor
 			$consulta = "SELECT * FROM pelicula WHERE estatus=1";
 			//Variable que guarda el resultado del query
