@@ -1,0 +1,185 @@
+body{
+	background-image: url("https://cdn.pixabay.com/photo/2016/03/23/17/33/curtain-1275200_960_720.png");
+	background-size: cover;
+}
+
+.centrado{
+	padding: 0%;
+
+}
+
+.letraBlanca{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px
+}
+
+.nomID{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px	
+}
+
+.info{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px
+}
+
+
+.fondoClaro{
+	color: white;
+}
+
+
+
+
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #c50000;
+}
+
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 100px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #680000;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+
+.pie-pagina .grupo-2{
+    background-color:  #680000;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+
+
+
+.header {
+    width: 100%;
+    height: 75px;
+    background: #9F0606;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    box-shadow: 10px 5px 5px black;
+}
+
+.container {
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+.logo {
+    float: left;
+    line-height: 75px;
+}
+
+ .logo h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 30px;
+    cursor: default;
+   }
+
+.menu {
+    float: right;
+    line-height: 40px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: normal;
+    font-size: 14px;
+    transition: all 500ms ease;
+    border-bottom: 4px solid transparent;
+}
+
+.menu a:hover {
+   color: #40ded7;
+   border-bottom: 4px solid #40ded7;
+}
+
+
+.form-control {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 18rem;
+    height: 2rem;
+    border-radius: 4rem;
+    color: dimgray;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+.form-control2 {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 28rem;
+    height: 10rem;
+    border-radius: 4rem;
+    color: dimgray;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
