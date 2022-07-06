@@ -20,7 +20,7 @@
 				</a>
 			</div>
 			<div class="col-lg-4">
-				<a class="btn btn-primary" href="">
+				<a class="btn btn-primary" href="actores.php">
 					Actores
 				</a>
 			</div>
