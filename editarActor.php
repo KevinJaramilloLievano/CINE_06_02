@@ -38,8 +38,19 @@
 					<br>
 				</div>
 
-				<div class="col-lg-6">
+				<div class="col-lg-8">
 					<input class="form-control" type="text" name="nacionalidad" placeholder="Nacionalidad" value="<?php echo $row['nacionalidad'];?>">
+				</div>
+
+				<div class="col-lg-12">
+					<br>
+				</div>
+
+				<div class="col-lg-8">
+					<input class="form-control" type="text" name="descripcion" placeholder="Descripcion" value="<?php echo $row['descripcion']?>">
+				</div>
+				<div class="col-lg-12">
+					<br>
 				</div>
 
 				<div class="col-lg-3">

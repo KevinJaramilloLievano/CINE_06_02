@@ -3,12 +3,14 @@
 		$idA = $_POST['idA'];
 		$nombreA = $_POST['nombre'];
 		$nacionalidad = $_POST['nacionalidad'];
+		$des = $_POST['descripcion'];
 
 		//Servidor, usuario, contraseña, BD
 		$conexion = new mysqli("localhost","root","","peliculas");
 		$consulta = "UPDATE actor SET 
 					 nombre = '$nombreA',
-					 nacionalidad = '$nacionalidad'
+					 nacionalidad = '$nacionalidad',
+					 descripcion = '$des'
 					 WHERE idActor = $idA
 					 ";
 

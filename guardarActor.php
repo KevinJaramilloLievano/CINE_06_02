@@ -1,13 +1,11 @@
 <?PHP
-	error_reporting(0);
-
-		$idA = $_POST["idActor"];
 		$nombreP = $_POST["nombre"];
 		$nac = $_POST["nacionalidad"];
+		$des = $_POST['descripcion'];
 	
 		$conexion = new mysqli("localhost","root","","peliculas");
-		$consulta = "INSERT INTO actor (idActor, nombre, nacionalidad) 
-		VALUES ('$idA','$nombreP', '$nac')";
+		$consulta = "INSERT INTO actor (idActor, nombre, nacionalidad, descripcion , estatus) 
+		VALUES (null,'$nombreP', '$nac','$des', 1)";
 
 		$ejecutar = mysqli_query($conexion,$consulta);
 

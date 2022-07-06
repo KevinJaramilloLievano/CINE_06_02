@@ -71,6 +71,13 @@
 			      </td>
 			    </tr>
 
+			    <tr>
+			    	<th scope="col">Descripcion</th>
+			    	<td>
+			    		<?PHP echo $row['descripcion']; ?>
+			    	</td>
+			    </tr>
+
 			    <?PHP
 			}
 			?>
