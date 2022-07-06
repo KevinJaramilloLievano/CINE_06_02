@@ -8,30 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="css/estiloCine1.css">
 </head>
 <body>
-
-	<div class="container centrado">
-
-		<h2 class="letraBlanca">Bienvenido a cinema UPP</h2>
-
-		<div class="row">
-			<div class="col-lg-4">
-				<a class="btn btn-primary" href="peliculas.php">
-					Peliculas
-				</a>
-			</div>
-			<div class="col-lg-4">
-				<a class="btn btn-primary" href="actores.php">
-					Actores
-				</a>
-			</div>
-			<div class="col-lg-4">
-				<a class="btn btn-primary" href="">
-					Directores
-				</a>
-			</div>
-		</div>
-
+	<?php include('header.php'); ?>
+	<div class="text-center">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/o3e-iK1ex1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
-
+	<?php include('footer.php'); ?>
 </body>
 </html>
