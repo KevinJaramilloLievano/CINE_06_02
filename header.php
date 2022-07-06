@@ -1,22 +1,12 @@
 <!-- Agregar el nuevo diseño del header -->
 <header>
 	<div class="container centrado">
-		<h2 class="letraBlanca">Bienvenido a cinema UPP</h2>
+		<h1 class="letraBlanca">Bienvenido a cinema UPP</h1>
+		<h1></h1>
+		<h3 class="letraBlanca">Lugar donde encontraras informacion sobre peliculas
+			y podras agregar alguna pelicula de tu interes para que cualquier
+			interesado lea la sinopsis y se pueda animar a verla</h3>
 		<div class="row">
-			<div class="col-lg-4">
-				<a class="btn btn-primary" href="peliculas.php">
-					Peliculas
-				</a>
-			</div>
-			<div class="col-lg-4">
-				<a class="btn btn-primary" href="actores.php">
-					Actores
-				</a>
-			</div>
-			<div class="col-lg-4">
-				<a class="btn btn-primary" href="´directores.php">
-					Directores
-				</a>
 			</div>
 		</div>
 	</div>

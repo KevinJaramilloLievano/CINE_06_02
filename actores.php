@@ -13,6 +13,14 @@
 	</style>
 </head>
 <body>
+
+<ul class="menu">
+		<li><a href="index.php">Inicio</a></li>
+		<li><a href="peliculas.php">Peliculas</a></li>
+		<li><a href="actores.php">Actores</a></li>
+		<li><a href="´directores.php">Directores</a></li>
+	</ul>
+
 	<div class="miniespacio">
 		<br><br><br><br>
 	</div>

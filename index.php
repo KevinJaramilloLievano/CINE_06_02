@@ -8,6 +8,14 @@
 	<link rel="stylesheet" type="text/css" href="css/estiloCine1.css">
 </head>
 <body>
+	
+	<ul class="menu">
+		<li><a href="index.php">Inicio</a></li>
+		<li><a href="peliculas.php">Peliculas</a></li>
+		<li><a href="actores.php">Actores</a></li>
+		<li><a href="´directores.php">Directores</a></li>
+	</ul>
+
 	<?php include('header.php'); ?>
 	<div class="text-center">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/o3e-iK1ex1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
