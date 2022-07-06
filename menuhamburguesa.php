@@ -1,7 +1,7 @@
 <nav class="menu" id="menu">
         <span><a href="#home">UNIVERSIDAD POLITÉCNICA DE PACHUCA</a></span>
         <ul class="list">
-            <li><a href="index.php">Menú</a></li>
+            <li><a href="index.php"><img src="Icons/home.png" width="35" height="35" alt="Home"></a></li>
             <li><a href="peliculas.php">Peliculas</a></li>
             <li><a href="actores.php">Actores</a></li>
             <li><a href="directores.php">Directores</a></li>

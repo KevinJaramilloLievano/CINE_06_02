@@ -20,7 +20,7 @@
 		<h2 class="letraBlanca">
 			Lista de películas
 			<br>
-			<a href="index.php" class="btn btn-info">Volver</a>
+			<a href="index.php" class="btn btn-info"><img src="Icons/return.png" width="35" height="35" alt="Return"></a>
 			<a href="nuevaPelicula.php" class="btn btn-success">+Agregar</a>
 			<a href="reportePeliculas.php" class="btn btn-secondary">Generar reporte</a>
 			<a href="respaldoGeneral.php" class="btn btn-warning">Respaldo general</a>
