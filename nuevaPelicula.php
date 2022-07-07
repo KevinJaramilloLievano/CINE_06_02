@@ -60,7 +60,7 @@
 				</div>
 
 				<div class="col-lg-2">
-					<input type="submit" class="btn btn-primary" value="Guardar">
+					<input type="submit" class="btn btn-primary" value="Guardar" onclick="return crear()">
 				</div>
 
 
@@ -69,5 +69,20 @@
 			
 		</form>
 	</div>
+	<script type="text/javascript">
+		function crear(){
+
+			var respuesta = confirm("esta seguro que desea agregar esta nueva pelicula");
+			if (respuesta == true){
+              
+				
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		
+		</script>
 </body>
 </html>

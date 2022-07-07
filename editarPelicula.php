@@ -138,7 +138,7 @@
 				<div class="botonA">
 					<br>
 					<input type="hidden" name="idP" value="<?php echo $row['idPelicula'];?>">
-					<input type="submit" class="btn btn-danger btn-lg" value="Actualizar">
+					<input type="submit" class="btn btn-danger btn-lg" value="Actualizar" onclick="return actualizar()">
 					<br><br><br>
 				</div>
 
@@ -148,7 +148,21 @@
 		</form>
 	</div>
 	<?php }?>
+	<script type="text/javascript">
+		function actualizar(){
 
+			var respuesta = confirm("esta seguro que desea actualizar");
+			if (respuesta == true){
+              
+				
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		
+		</script>
 	<!--Pie de Pagina-->
     <footer class="pie-pagina">
         <div class="grupo-1">

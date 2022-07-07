@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+    <head>
 <?php
 	
 	$idP = $_POST['idP'];
@@ -29,7 +32,17 @@
 
 	$conexion->query($consulta);
 
-	echo "Datos actualizados";
-	echo "<a href='peliculas.php'>Volver</a>"
+	echo"<script>alert('actualizado');</script>";
 
 ?>
+<script type="text/javascript">
+        function redirect() {
+            window.location = "peliculas.php";
+        }
+        window.onload = redirect;
+        </script>
+</head>
+    <body>
+    
+    </body>
+</html>

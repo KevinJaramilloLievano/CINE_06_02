@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+    <head>
 <?PHP
 
 	$nombreP = $_POST["nombrePelicula"];
@@ -21,6 +24,16 @@
 	VALUES (null,'$nombreP', $fecha, '$nac', '$idioma', '$color', '$clasi', '$sin', 1)";
 	$ejecutar = mysqli_query($conexion,$consulta);
 
-	echo "Registro correcto <br>";
-	echo "<a href='peliculas.php'>Volver</a>"	 
+	echo"<script>alert('guadrdado');</script>";
 ?>
+<script type="text/javascript">
+        function redirect() {
+            window.location = "peliculas.php";
+        }
+        window.onload = redirect;
+        </script>
+</head>
+    <body>
+    
+    </body>
+</html>
