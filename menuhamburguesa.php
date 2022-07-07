@@ -5,6 +5,7 @@
             <li><a href="peliculas.php">Peliculas</a></li>
             <li><a href="actores.php">Actores</a></li>
             <li><a href="directores.php">Directores</a></li>
+            <li><a href="acerca de.php">Acerca de</a></li>
         </ul>
     </nav>
     <div class="content_icons" id="content_icons">

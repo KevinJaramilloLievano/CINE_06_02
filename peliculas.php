@@ -19,6 +19,7 @@
 		<li><a href="peliculas.php">Peliculas</a></li>
 		<li><a href="actores.php">Actores</a></li>
 		<li><a href="´directores.php">Directores</a></li>
+        <li><a href="acerca de.php">Acerca de</a></li>
 	</ul>
 
 	<div class="miniespacio">
