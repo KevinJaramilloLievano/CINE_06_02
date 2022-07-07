@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+    <head>
 <?php
 
 	$idP = $_GET['id'];
@@ -18,7 +21,17 @@
 			else{
 				$consulta = "UPDATE pelicula set estatus=0 WHERE idPelicula=$idP";
 				$conexion->query($consulta);
-				echo "Pelicula eliminada correctamente";
-				echo "<a href='peliculas.php'>Volver</a>";
+				echo"<script>alert('eliminado');</script>";
 			}
 ?>
+<script type="text/javascript">
+        function redirect() {
+            window.location = "peliculas.php";
+        }
+        window.onload = redirect;
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>

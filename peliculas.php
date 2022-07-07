@@ -11,14 +11,22 @@
 			color: white;
 		}
 	</style>
+
+	<!-- modificacion de estilo para la barra de busqueda en la tabla -->
+	<style> 
+		input{width: 1300px}
+	</style>
+
+
 </head>
 <body>
 
 <ul class="menu">
-		<li><a href="index.php">Inicio</a></li>
+		<li><a href="index.php"><img src="Icons/home.png" width="35" height="35" alt="Home"></a></li>
 		<li><a href="peliculas.php">Peliculas</a></li>
 		<li><a href="actores.php">Actores</a></li>
 		<li><a href="´directores.php">Directores</a></li>
+        <li><a href="acerca de.php">Acerca de</a></li>
 	</ul>
 
 	<div class="miniespacio">
@@ -28,7 +36,7 @@
 		<h2 class="letraBlanca">
 			Lista de películas
 			<br>
-			<a href="index.php" class="btn btn-info">Volver</a>
+			<a href="index.php" class="btn btn-info"><img src="Icons/return.png" width="35" height="35" alt="Return"></a>
 			<a href="nuevaPelicula.php" class="btn btn-success">+Agregar</a>
 			<a href="reportePeliculas.php" class="btn btn-secondary">Generar reporte</a>
 			<a href="respaldoGeneral.php" class="btn btn-warning">Respaldo general</a>
@@ -52,7 +60,11 @@
 				mkdir($dir);
 		?>
 			
-		<table class="table table-dark table-striped table-hover">
+
+		<!-- creacion de funcion para buscar en tabla, infobuscar id de la funcion y tabla id de la tabla -->
+			<input type="text" id="infobuscar" onkeyup="buscar()" placeholder="Buscar en la tabla">
+		<!-- se le añade una id a la tabla para poder realizar la busqueda -->			
+		<table id="tabla" class="table table-dark table-striped table-hover">
 		  <thead>
 		    <tr>
 		      <th scope="col">#</th>
@@ -112,7 +124,7 @@
 			      </td>
 
 			      <td>
-			      	<a href="borrarLogicoPelicula.php?id=<?php echo $row['idPelicula'];?>">
+			      	<a href="borrarLogicoPelicula.php?id=<?php echo $row['idPelicula'];?>"> <button type='button' class='btn btn-danger'onclick="return confirmdelete()" >Borrar</button>
 			      		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
 						<path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
 						<path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
@@ -134,5 +146,48 @@
 		  </tbody>
 		</table>
 	</div>
+
+
+<!-- funcion para llamar al metodo de busqueda -->
+<script>
+	function buscar() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("infobuscar");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("tabla");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+<script type="text/javascript">
+		function confirmdelete(){
+
+			var respuesta = confirm("esta seguro que desea eliminar");
+			if (respuesta == true){
+              
+				
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		
+		</script>
+	
 </body>
 </html>
