@@ -40,6 +40,7 @@
 			<a href="nuevaPelicula.php" class="btn btn-primary state-loading">+Agregar</a>
 			<a href="reportePeliculas.php" class="btn btn-primary state-loading">Generar reporte</a>
 			<a href="respaldoGeneral.php" class="btn btn-primary state-loading">Respaldo general</a>
+			<a href="BoletoDigitalPeliculas.php" class="btn btn-primary state-loading">Boleto Digital</a>
 		</h2>
 		
 		<?PHP 
