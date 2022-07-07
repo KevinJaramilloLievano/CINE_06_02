@@ -21,9 +21,9 @@
 			Lista de películas
 			<br>
 			<a href="index.php" class="btn btn-info"><img src="Icons/return.png" width="35" height="35" alt="Return"></a>
-			<a href="nuevaPelicula.php" class="btn btn-success">+Agregar</a>
-			<a href="reportePeliculas.php" class="btn btn-secondary">Generar reporte</a>
-			<a href="respaldoGeneral.php" class="btn btn-warning">Respaldo general</a>
+			<a href="nuevaPelicula.php" class="btn btn-primary state-loading">+Agregar</a>
+			<a href="reportePeliculas.php" class="btn btn-primary state-loading">Generar reporte</a>
+			<a href="respaldoGeneral.php" class="btn btn-primary state-loading">Respaldo general</a>
 		</h2>
 		
 		<?PHP 

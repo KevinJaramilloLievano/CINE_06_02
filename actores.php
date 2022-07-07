@@ -31,10 +31,10 @@
 			Lista de actores
 			<br>
 			<a href="index.php" class="btn btn-info"><img src="Icons/return.png" width="35" height="35" alt="Return"></a>
-			<a href="Aborrados.php" class="btn btn-primary">L. Actores Eliminados</a>
-			<a href="nuevoActor.php" class="btn btn-success">+Agregar</a>
-			<a href="reporteActor.php" class="btn btn-secondary">Generar reporte</a>
-			<a href="respaldoGeneralActor.php" class="btn btn-warning">Respaldo general</a>
+			<a href="Aborrados.php" class="btn btn-success ">L. Actores Eliminados</a>
+			<a href="nuevoActor.php" class="btn btn-primary state-loadingsuccess">+Agregar</a>
+			<a href="reporteActor.php" class="btn btn-success">Generar reporte</a>
+			<a href="respaldoGeneralActor.php" class="btn btn-primary state-loading">Respaldo general</a>
 		</h2>
 		
 		<?PHP 
