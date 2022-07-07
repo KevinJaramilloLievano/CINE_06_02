@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-07-2022 a las 06:05:26
+-- Tiempo de generación: 07-07-2022 a las 08:49:30
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.0.19
 
@@ -130,37 +130,38 @@ CREATE TABLE `pelicula` (
   `ColorPelicula` varchar(20) DEFAULT NULL,
   `Clasificacion` varchar(30) DEFAULT NULL,
   `sinopsis` text DEFAULT NULL,
-  `estatus` int(1) NOT NULL
+  `estatus` int(1) NOT NULL,
+  `califi` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `pelicula`
 --
 
-INSERT INTO `pelicula` (`idPelicula`, `nombrePelicula`, `fecha`, `nacionalidad`, `idioma`, `ColorPelicula`, `Clasificacion`, `sinopsis`, `estatus`) VALUES
-(1, 'Lego Batman 2', '0000-00-00', 'USA', 'Ingles', 'color', 'PG-13', 'Batichica se une a los cruzados impedir que Señor Frio  terrible venganza					', 1),
-(3, 'animales fantasticos', '0000-00-00', 'usa', 'ingles', 'color', 'PG-13', 'En algún lugar de Europa, unos Aurores se encuentran a la caza de alguien', 1),
-(4, 'suicide squad', '0000-00-00', 'usa', 'ingles', 'color', 'PG-13', 'Floyd Lawton entrena con un saco de boxeo hasta que el capitán Griggs lo interrumpe para traerle comida', 1),
-(5, 'Batman return', '0000-00-00', 'USA', 'ingles', 'color', 'PG-13', 'El súper héroe de la capa negra se enfrenta Ciudad Gótica de los malévolos planes del Pingüino.', 1),
-(6, 'la liga de la justicia', '0000-00-00', 'USA,', 'ingles', 'color', 'PG-13', 'Gracias a su renovada fe en la humanidad e inspirado por el acto de altruísmo de Superman,', 1),
-(7, 'Batman y superman', '0000-00-00', 'USA', 'ingles', 'color', 'PG-13', 'Batman se enfrenta a Superman, temeroso de que su afán de poder termine nublando', 1),
-(8, 'La mujer maravilla 2', '0000-00-00', 'Francia', 'frances', 'b/n', 'PG-18', 'Diana, hija de dioses y princesa de las amazonas, nunca ha salido de su isla. 					', 1),
-(9, 'Aquaman', '0000-00-00', 'USA', 'Ingles', 'color', 'PG-13', 'Aquaman debe recuperar el legendario Tridente de Atlan para salvar a la ciudad subacuática de Atlantis', 1),
-(12, 'Avengers: era de ultrón', '0000-00-00', 'USA', 'Ingles', 'color', 'PG-13', 'El director de la Agencia SHIELD decide reclutar a un equipo para salvar al mundo', 1),
-(13, 'Infinity war', '0000-00-00', 'USA', 'Ingles', 'Color', 'PG-13', 'Los superhéroes se alían para vencer al poderoso Thanos, el peor enemigo al que se han enfrentado', 1),
-(14, 'los miserables', '0000-00-00', 'Francia', 'Frances', 'Color', 'Pg-13', 'Después de 19 años como prisionero, Jean Valjean es liberado por Javert,', 1),
-(15, 'Hombres de negro', '0000-00-00', 'USA', 'Ingles', 'color', 'PG-13', 'Un policía se une a una organización secreta del gobierno actividad extraterrestre en la Tierra.', 1),
-(16, 'Piratas del Caribe La maldició', '0000-00-00', 'USA', 'Ingles', 'color', 'PG-13', 'Un herrero y un extraño pirata se unen para rescatar a una dama secuestrada', 1),
-(17, 'hancock', '0000-00-00', 'Italiana', 'ingles', 'color', 'PG-13', 'Un desaliñado superhéroe llamado Hancock (Will Smith) protege a los ciudadanos de Los Ángeles,', 1),
-(18, 'Guardianes de la galaxia', '0000-00-00', 'USA', 'ingles', 'color', 'PG-13', 'Un aventurero espacial se convierte en la presa de unos cazadores de tesoros', 0),
-(19, 'Batman: el caballero de la noc', '0000-00-00', 'USA', 'INGLES', 'COLOR', 'PG-13', 'Batman tiene que mantener el equilibrio entre el heroísmo y el vigilantismo', 0),
-(21, 'Spiderman 3: far from home', '0000-00-00', 'Inglaterra', 'Inglés', 'Color', 'B15', 'Tom holland creará el multiverso y luchará contra los 3 venom.				', 1),
-(22, 'Toy story 4: woody dice adiós', '0000-00-00', 'USA', 'Inglés', 'Color', 'A13', 'Woody dejará a sus amigos por un viejo amor del pasado. Vive una aventura extraordinaria.		', 1),
-(23, '545', '0000-00-00', '4554', 'vdd3', '33w23', '4554', 'bfdfdfvfvd', 1),
-(24, 'Las locuras del emperador', '0000-00-00', 'USA', 'Español', 'Color', 'A10', 'Cuzco es una llama que habla.', 1),
-(25, 'vbbv', '2021-10-12', 'vcvc', 'vc', 'vc', 'vc', 'vvc', 1),
-(26, 'Navidad 2021', '0000-00-00', 'Mexico', 'Español', 'Color', 'A10', 'La navidad más esperada llega a los cines', 1),
-(27, 'Axeel', '0000-00-00', 'Mexico', 'Español', 'Remasterizado', '18', 'Pepe', 1);
+INSERT INTO `pelicula` (`idPelicula`, `nombrePelicula`, `fecha`, `nacionalidad`, `idioma`, `ColorPelicula`, `Clasificacion`, `sinopsis`, `estatus`, `califi`) VALUES
+(1, 'Lego Batman 2', '0000-00-00', 'USA', 'Ingles', 'color', 'PG-13', 'Batichica se une a los cruzados impedir que Señor Frio  terrible venganza					', 1, '5'),
+(3, 'animales fantasticos', '0000-00-00', 'usa', 'ingles', 'color', 'PG-13', 'En algún lugar de Europa, unos Aurores se encuentran a la caza de alguien', 1, '3'),
+(4, 'suicide squad', '0000-00-00', 'usa', 'ingles', 'color', 'PG-13', 'Floyd Lawton entrena con un saco de boxeo hasta que el capitán Griggs lo interrumpe para traerle comida', 1, '4'),
+(5, 'Batman return', '0000-00-00', 'USA', 'ingles', 'color', 'PG-13', 'El súper héroe de la capa negra se enfrenta Ciudad Gótica de los malévolos planes del Pingüino.', 1, NULL),
+(6, 'la liga de la justicia', '0000-00-00', 'USA,', 'ingles', 'color', 'PG-13', 'Gracias a su renovada fe en la humanidad e inspirado por el acto de altruísmo de Superman,', 1, NULL),
+(7, 'Batman y superman', '0000-00-00', 'USA', 'ingles', 'color', 'PG-13', 'Batman se enfrenta a Superman, temeroso de que su afán de poder termine nublando', 1, NULL),
+(8, 'La mujer maravilla 2', '0000-00-00', 'Francia', 'frances', 'b/n', 'PG-18', 'Diana, hija de dioses y princesa de las amazonas, nunca ha salido de su isla. 					', 1, NULL),
+(9, 'Aquaman', '0000-00-00', 'USA', 'Ingles', 'color', 'PG-13', 'Aquaman debe recuperar el legendario Tridente de Atlan para salvar a la ciudad subacuática de Atlantis', 1, NULL),
+(12, 'Avengers: era de ultrón', '0000-00-00', 'USA', 'Ingles', 'color', 'PG-13', 'El director de la Agencia SHIELD decide reclutar a un equipo para salvar al mundo', 1, NULL),
+(13, 'Infinity war', '0000-00-00', 'USA', 'Ingles', 'Color', 'PG-13', 'Los superhéroes se alían para vencer al poderoso Thanos, el peor enemigo al que se han enfrentado', 1, NULL),
+(14, 'los miserables', '0000-00-00', 'Francia', 'Frances', 'Color', 'Pg-13', 'Después de 19 años como prisionero, Jean Valjean es liberado por Javert,', 1, NULL),
+(15, 'Hombres de negro', '0000-00-00', 'USA', 'Ingles', 'color', 'PG-13', 'Un policía se une a una organización secreta del gobierno actividad extraterrestre en la Tierra.', 1, NULL),
+(16, 'Piratas del Caribe La maldició', '0000-00-00', 'USA', 'Ingles', 'color', 'PG-13', 'Un herrero y un extraño pirata se unen para rescatar a una dama secuestrada', 1, NULL),
+(17, 'hancock', '0000-00-00', 'Italiana', 'ingles', 'color', 'PG-13', 'Un desaliñado superhéroe llamado Hancock (Will Smith) protege a los ciudadanos de Los Ángeles,', 1, NULL),
+(18, 'Guardianes de la galaxia', '0000-00-00', 'USA', 'ingles', 'color', 'PG-13', 'Un aventurero espacial se convierte en la presa de unos cazadores de tesoros', 0, NULL),
+(19, 'Batman: el caballero de la noc', '0000-00-00', 'USA', 'INGLES', 'COLOR', 'PG-13', 'Batman tiene que mantener el equilibrio entre el heroísmo y el vigilantismo', 0, NULL),
+(21, 'Spiderman 3: far from home', '0000-00-00', 'Inglaterra', 'Inglés', 'Color', 'B15', 'Tom holland creará el multiverso y luchará contra los 3 venom.				', 1, NULL),
+(22, 'Toy story 4: woody dice adiós', '0000-00-00', 'USA', 'Inglés', 'Color', 'A13', 'Woody dejará a sus amigos por un viejo amor del pasado. Vive una aventura extraordinaria.		', 1, NULL),
+(23, '545', '0000-00-00', '4554', 'vdd3', '33w23', '4554', 'bfdfdfvfvd', 1, NULL),
+(24, 'Las locuras del emperador', '0000-00-00', 'USA', 'Español', 'Color', 'A10', 'Cuzco es una llama que habla.', 1, NULL),
+(25, 'vbbv', '2021-10-12', 'vcvc', 'vc', 'vc', 'vc', 'vvc', 1, NULL),
+(26, 'Navidad 2021', '0000-00-00', 'Mexico', 'Español', 'Color', 'A10', 'La navidad más esperada llega a los cines', 1, NULL),
+(27, 'Axeel', '0000-00-00', 'Mexico', 'Español', 'Remasterizado', '18', 'Pepe', 1, NULL);
 
 --
 -- Índices para tablas volcadas
