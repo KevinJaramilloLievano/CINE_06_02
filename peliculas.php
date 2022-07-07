@@ -11,6 +11,13 @@
 			color: white;
 		}
 	</style>
+
+	<!-- modificacion de estilo para la barra de busqueda en la tabla -->
+	<style> 
+		input{width: 1300px}
+	</style>
+
+
 </head>
 <body>
 
@@ -53,7 +60,11 @@
 				mkdir($dir);
 		?>
 			
-		<table class="table table-dark table-striped table-hover">
+
+		<!-- creacion de funcion para buscar en tabla, infobuscar id de la funcion y tabla id de la tabla -->
+			<input type="text" id="infobuscar" onkeyup="buscar()" placeholder="Buscar en la tabla">
+		<!-- se le añade una id a la tabla para poder realizar la busqueda -->			
+		<table id="tabla" class="table table-dark table-striped table-hover">
 		  <thead>
 		    <tr>
 		      <th scope="col">#</th>
@@ -135,5 +146,33 @@
 		  </tbody>
 		</table>
 	</div>
+
+
+<!-- funcion para llamar al metodo de busqueda -->
+<script>
+	function buscar() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("infobuscar");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("tabla");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+	
 </body>
 </html>
