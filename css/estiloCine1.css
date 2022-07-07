@@ -1,36 +1,34 @@
 body{
-	font-family: Arial, Helvetica;
 	background-image: url("https://static.vecteezy.com/system/resources/previews/002/217/896/non_2x/cinema-wallpaper-social-media-message-background-vector.jpg");
 }
 
-.menu{
-	list-style: none;
-	padding: 0;
-	background: #092327;
-	width: 100%;
+
+.centrado {
+	padding: 10% 13% 10% 29%;
+	width: 90%;
 	margin: auto;
 }
 
-.menu li a{
-	text-decoration: none;
-	color: white;
-	padding: 20px;
-	display: block;
+
+.centrado3 {
+	
+	width: 90%;
+	margin: auto
 }
 
-.menu li{
-	display: inline-block;
-	text-align: center;
-
+.centrado4 {
+	
+	width: 90%;
+	margin: auto
 }
 
-.menu li a:hover{
-	background: #ef8354;
+.centrado5 {
+	
+	width: 90%;
+	margin: auto
 }
 
-.centrado{
-	padding: 10% 20% 10% 20%;
-}
+
 
 .letraBlanca{
 	color: white;
@@ -40,4 +38,478 @@ body{
 .fondoClaro{
 	color: white;
 }
+
+.botonP{
+    background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: rgb(235, 181, 252);
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+	;
+  }
+  .botonP:hover{
+    background: rgb(235, 181, 252);
+	color: #000;
+
+  }.botonA{
+    background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.11em;
+	padding: 0.93em 1.87em;
+	color: rgb(235, 181, 252);
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+	
+  }
+  .botonA:hover{
+    background: rgb(235, 181, 252);
+	color: #000;
+  }
+
+
+
+
+.botonD{
+    background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: rgb(235, 181, 252);
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.botonD:hover{
+    background: rgb(235, 181, 252);
+	color: #000;
+}
+
+.botonD .boton a {
+	margin-right: 1.20em;
+}
+
+
+
+header {
+	padding: 30px 0;
+}
+
+/* -pelicula principal- */
+.pelicula-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../temp/Anims.png.jpg);
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal .centrado3{
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: rgb(235, 181, 252);
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+	background: rgb(235, 181, 252);
+	color: #000;
+}
+
+.pelicula-principal .boton i {
+	margin-right: 1.20em;
+}
+
+
+
+/*---- -pelicula recomendadas- ----*/
+
+.peliculas-recomendadas {
+	margin-bottom: 70px;
+}
+
+.centrado3-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+
+.peliculas-recomendadas .centrado3-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+
+.peliculas-recomendadas .centrado3-principal .flecha-izquierda,
+.peliculas-recomendadas .centrado3-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: rgba(0, 0, 0, 0.822);
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.peliculas-recomendadas .centrado3-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .centrado3-principal .flecha-derecha:hover {
+	background: rgb(235, 181, 252);
+}
+
+.peliculas-recomendadas .centrado3-principal .flecha-izquierda {
+	left: 0;
+}
+
+.peliculas-recomendadas .centrado3-principal .flecha-derecha {
+	right: 0;
+}
+
+/* -Carrucel- */
+
+
+.peliculas-recomendadas .centrado3-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .centrado3-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .centrado3-carousel .carousel .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.peliculas-recomendadas .centrado3-carousel .carousel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.peliculas-recomendadas .centrado3-carousel .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+
+
+/* -Actor del momento- */
+
+.Actor-momento {
+
+	font-size: 16px;
+		min-height: 40.62em;
+		color: #fff;
+		background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../temp/A-1.jpg);
+		background-size: cover;
+		margin-bottom: 3.12em;
+		display: flex;
+		align-items: end;
+
+}
+			
+.Actor-momento.centrado4 {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.Actor-momento .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.Actor-momento .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.Actor-momento .boton2 {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: rgb(235, 181, 252);
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.Actor-momento .boton i {
+	
+	margin-right: 2em;
+
+}
+
+.Actor-momento .boton2:hover{
+	background: rgb(235, 181, 252);
+	color: #000;
+}
+
+/*---- -Actor del Momento- ----*/
+
+
+.Actor-Momento {
+	margin-bottom: 70px;
+}
+
+.centrado4-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+
+.Actor-Momento  .centrado4-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+
+.Actor-Momento .centrado4-principal .flecha-izquierdaa,
+.Actor-Momento .centrado4-principal .flecha-derechaa {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: rgba(0, 0, 0, 0.822);
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.Actor-Momento .centrado4-principal .flecha-izquierdaa:hover,
+.Actor-Momento .centrado4-principal .flecha-derechaa:hover {
+	background: rgb(235, 181, 252);
+}
+
+.Actor-Momento .centrado4-principal .flecha-izquierdaa {
+	left: 0;
+}
+
+.Actor-Momento .centrado4-principal .flecha-derechaa {
+	right: 0;
+}
+
+/* -Carrucel- */
+
+
+.Actor-Momento .centrado4-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.Actor-Momento  .centrado4-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.Actor-Momento  .centrado4-carousel .carousel .Actor{
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.Actor-Momento  .centrado4-carousel .carousel .Actor.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.Actor-Momento  .centrado4-carousel .carousel .Actor img {
+	width: 100%;
+	vertical-align: top;
+}
+
+
+/* -Director del momento- */
+
+.Director-momento {
+
+	font-size: 16px;
+		min-height: 40.62em;
+		color: #fff;
+		background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../temp/A-2.jpg);
+		background-size: cover;
+		margin-bottom: 3.12em;
+		display: flex;
+		align-items: end;
+
+}
+			
+.Director-momento.centrado5 {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.Director-momento .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.Director-momento .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.Director-momento .boton3 {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: rgb(235, 181, 252);
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.Director-momento .boton i {
+	
+	margin-right: 2em;
+
+}
+
+.Director-momento .boton3:hover{
+	background: rgb(235, 181, 252);
+	color: #000;
+}
+
+/*---- Director del Momento- ----*/
+
+
+.Director-Momento  {
+	margin-bottom: 70px;
+}
+
+.centrado5-titulo-controles h5 {
+	color: #fff;
+	font-size: 30px;
+}
+
+
+.Director-Momento  .centrado5-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+
+.Director-Momento  .centrado5-principal .flecha-izquierdaaa,
+.Director-Momento  .centrado5-principal .flecha-derechaaa {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: rgba(0, 0, 0, 0.822);
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.Director-Momento .centrado5-principal .flecha-izquierdaaa:hover,
+.Director-Momento  .centrado5-principal .flecha-derechaaa:hover {
+	background: rgb(235, 181, 252);
+}
+
+.Director-Momento  .centrado5-principal .flecha-izquierdaaa {
+	left: 0;
+}
+
+.Director-Momento  .centrado5-principal .flecha-derechaaa {
+	right: 0;
+}
+
+/* -Carrucel- */
+
+
+.Director-Momento .centrado5-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.Director-Momento  .centrado5-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.Director-Momento  .centrado5-carousel .carousel .Director{
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.Director-Momento  .centrado5-carousel .carousel .Director.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.Director-Momento  .centrado5-carousel .carousel .Director img {
+	width: 100%;
+	vertical-align: top;
+}
+
 
