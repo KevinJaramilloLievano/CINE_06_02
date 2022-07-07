@@ -49,8 +49,36 @@
 				<div class="col-lg-3">
 					<input class="form-control" type="text" name="idioma" placeholder="Idioma">
 				</div>
+				
 				<div class="col-lg-3">
-					<input class="form-control" type="text" name="color" placeholder="Color">
+				
+				
+				<?php 
+
+				$conexion = new mysqli("localhost","root","","peliculas");
+                $query=mysqli_query($conexion,"SELECT id, color FROM color");
+		
+		?>
+
+
+
+					<select class="form-control" name="color">
+						<?php    
+						 while($color = mysqli_fetch_array($query)){
+
+						 
+
+						?>
+						<option name="valorColor" value="<?php  echo $color['color']?>"><?php echo $color['color']?></option>
+						
+						 <?php
+						   }
+						   
+						 ?>
+
+                    </select>
+
+
 				</div>
 
 				<div class="col-lg-12">
